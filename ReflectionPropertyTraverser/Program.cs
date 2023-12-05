@@ -19,10 +19,13 @@ namespace ReflectionPropertyTraverser
 
             Person[] People = {
                 new Person("Bela",30,true),
-                new Person("Kata",25,false)
+                new Person("Kata",30,false),
+                new Person("Fanni",16,false),
+                new Person("Karcsi",13,true)
             };
             
-            People[1].ChangeIsMan();
+            Array.Sort(People);
+
             
 
             CollectionTraverser(People);
