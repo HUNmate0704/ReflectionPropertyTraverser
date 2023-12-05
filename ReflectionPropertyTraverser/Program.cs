@@ -17,7 +17,15 @@ namespace ReflectionPropertyTraverser
                 DateTime.Now.AddYears(3),
             };
 
-            CollectionTraverser(dates);
+            Person[] People = {
+                new Person("Bela",30,true),
+                new Person("Kata",25,false)
+            };
+            
+            People[1].ChangeIsMan();
+            
+
+            CollectionTraverser(People);
 
         }
 
